@@ -42,13 +42,17 @@ body {
 }
 
 main {
-    border: 1px solid red;
-    width: 40%;
+    width: 100%;
     margin-bottom: 15%;
 }
 
 .image {
     text-align: center;
+}
+
+.form {
+    margin: auto;
+    width: 37rem;
 }
 
 .searchBar {
@@ -70,6 +74,10 @@ main {
 
 .searchBar input:focus {
     outline: none;
+}
+
+.searchBar input:hover {
+    box-shadow: 0 1px 2px 1px rgb(226, 226, 226);
 }
 
 .searchBar .search {
@@ -100,7 +108,7 @@ main {
 .buttons button {
     display: inline-block;
     margin: 0 5px;
-    width: 22%;
+    width: 8rem;
     height: 35px;
     background-color: rgb(245, 244, 244);
     color: rgb(83, 83, 83);
@@ -108,9 +116,12 @@ main {
     font-size: 88%;
 }
 
+.buttons button:hover {
+    box-shadow: 0 1px 2px 1px rgb(226, 226, 226);
+}
+
 .header, .footer {
     align-self: stretch;
-    border: 1px solid red;
 }
 
 .header {
@@ -138,10 +149,12 @@ main {
 .nav li:nth-child(3) {
     color: rgb(121, 121, 121);
     align-self: flex-end;
+    margin-bottom: 3px;
 }
 
 .nav li img {
     border-radius: 50%;
+    margin-top: 3px;
 }
 
 .footer {
@@ -164,4 +177,25 @@ main {
     text-decoration: none;
     color: rgb(114, 113, 113);
     font-size: 90%;
+}
+
+.footer li a:hover,
+.nav li a:hover {
+    text-decoration: underline;
+}
+
+@media all and (max-width: 650px) {
+    main {
+        margin-bottom: 34%;
+    }
+    
+    .form {
+        width: 95%;
+    }
+
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
