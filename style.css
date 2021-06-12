@@ -37,13 +37,14 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: space-between;
 }
 
 main {
     border: 1px solid red;
     width: 40%;
+    margin-bottom: 15%;
 }
 
 .image {
@@ -105,4 +106,62 @@ main {
     color: rgb(83, 83, 83);
     border: none;
     font-size: 88%;
+}
+
+.header, .footer {
+    align-self: stretch;
+    border: 1px solid red;
+}
+
+.header {
+    height: 48px;
+}
+
+.nav {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.nav li {
+    margin: 0 10px;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: black;
+    font-size: 80%;
+}
+
+.nav li:nth-child(3) {
+    color: rgb(121, 121, 121);
+    align-self: flex-end;
+}
+
+.nav li img {
+    border-radius: 50%;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    background-color: rgb(238, 237, 237);
+}
+
+.footer ul {
+    list-style: none;
+    display: flex;
+}
+
+.footer li {
+    margin: 15px 12px;
+}
+
+.footer li a {
+    text-decoration: none;
+    color: rgb(114, 113, 113);
+    font-size: 90%;
 }
