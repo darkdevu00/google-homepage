@@ -199,3 +199,15 @@ main {
         align-items: center;
     }
 }
+
+@media all and (max-width: 415px) {
+    .image img {
+        width: 50%;
+    }
+    .footer {
+        font-size: 80%;
+    }
+    .footer .right {
+        display: none;
+    }
+}
