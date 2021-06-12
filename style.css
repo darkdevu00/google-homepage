@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/materialicons/v90/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+  }
+  
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+  }
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    box-sizing: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+}
+
+.wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    border: 1px solid red;
+    width: 40%;
+}
+
+.image {
+    text-align: center;
+}
+
+.searchBar {
+    position: relative;
+    margin: 30px 0;
+}
+
+.searchBar input {
+    width: 100%;
+    display: inline-block;
+    height: 44px;
+    border-start-start-radius: 60px;
+    border-end-start-radius: 60px;
+    border-start-end-radius: 60px;
+    border-end-end-radius: 60px;
+    border: 1px solid rgb(197, 197, 197);
+    padding: 0 40px;
+}
+
+.searchBar input:focus {
+    outline: none;
+}
+
+.searchBar .search {
+    color: rgb(173, 173, 173);
+    font-size: 125%;
+    position: absolute;
+    top: 12px;
+    left: 16px;
+}
+
+.searchBar .mic {
+    color: rgb(173, 173, 173);
+    font-size: 150%;
+    position: absolute;
+    right: 22px;
+    top: 10px;
+}
+
+.searchBar .mic:hover {
+    cursor: pointer;
+}
+
+.buttons {
+    text-align: center;
+    width: 100%;
+}
+
+.buttons button {
+    display: inline-block;
+    margin: 0 5px;
+    width: 22%;
+    height: 35px;
+    background-color: rgb(245, 244, 244);
+    color: rgb(83, 83, 83);
+    border: none;
+    font-size: 88%;
+}
